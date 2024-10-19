@@ -10,16 +10,21 @@ TIP: Assemble and test your electronic parts on the bench BEFORE installing them
 
 2. Attach a keyboard, mouse and monitor to your Raspberry Pi, insert the SD Card or fit the SSD you have just installed the OS on and boot up. Complete the OS installation procedure for the OS and if all is well you should end up with a command line prompt or desktop on your HDMI monitor.
 
-3. Connect your Pi to the Internet and test the connection is working.
+3. The Pi3A+ and Zero 2 W have only 500MB of RAM and can be somewhat sluggish particularly if using a desktop and a browser. Perfomance can be improved markedly by increasing the amount of swap file available on these platforms from the derisory fixed 200 Meg default setting to the dynamic setting. A short tutorial is here
 
-4. Open a terminal from your desktop if necessary and then move to your root directory and download the "QBox_Start" zip file with
-5. wget https://github.com/arqtv/QBOX/blob/main/QBox_Start.zip Once the zip file has downloaded you may unzip it.
+    https://pimylifeup.com/raspberry-pi-swap-file/
+       
+4. Connect your Pi to the Internet and test the connection is working. Quick and easy is to ping 1.1.1.1
 
-6. Copy the firmware file for your particular LCD from the unzipped firmware folder to /lib/firmware if running a Raspberry Pi OS or to whatever directory is relevant for your particular OS.
+5. Open a terminal from your desktop if necessary and then move to your root directory and download the "QBox_Start" zip file with
 
-7. Open your boot/config.txt or if Pi 5 open boot/firmware/config.txt file with nano or the editor of your choice and copy the config lines for your LCD from the LCDConfig file to the end of your config.tx file - typically under [all], then save the edited file and close nano.   
+6. wget https://github.com/arqtv/QBOX/blob/main/QBox_Start.zip Once the zip file has downloaded you may unzip it.
 
-8. Reboot your Pi and check your LCD is displaying cli text or the Desktop you installed.
+7. Copy the firmware file for your particular LCD from the unzipped firmware folder to /lib/firmware if running a Raspberry Pi OS or to whatever directory is relevant for your particular OS.
+
+8. Open your boot/config.txt or if Pi 5 open boot/firmware/config.txt file with nano or the editor of your choice and copy the config lines for your LCD from the LCDConfig file to the end of your config.tx file - typically under [all], then save the edited file and close nano.   
+
+9. Reboot your Pi and check your LCD is displaying cli text or the Desktop you installed.
 
 Once you are happy everything is working as expected you can begin to assemble your QBox.  
 
