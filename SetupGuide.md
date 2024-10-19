@@ -16,15 +16,17 @@ TIP: Assemble and test your electronic parts on the bench BEFORE installing them
        
 4. Connect your Pi to the Internet and test the connection is working. Quick and easy is to ping 1.1.1.1
 
-5. Open a terminal from your desktop if necessary and then move to your root directory and download the "QBox_Start" zip file with
+5. Open a terminal from your desktop if necessary and from your home directory download the "QBox_Start" zip file with
 
-6. wget https://github.com/arqtv/QBOX/blob/main/QBox_Start.zip Once the zip file has downloaded you may unzip it.
+    wget https://github.com/arqtv/QBOX/blob/main/QBox_Start.zip
+
+6. Once the zip file has downloaded you may unzip it.
 
 7. Copy the firmware file for your particular LCD from the unzipped firmware folder to /lib/firmware if running a Raspberry Pi OS or to whatever directory is relevant for your particular OS.
 
 8. Open your boot/config.txt or if Pi 5 open boot/firmware/config.txt file with nano or the editor of your choice and copy the config lines for your LCD from the LCDConfig file to the end of your config.tx file - typically under [all], then save the edited file and close nano.   
 
-9. Reboot your Pi and check your LCD is displaying cli text or the Desktop you installed.
+9. Reboot your Pi and check your LCD is displaying cli text or the Desktop you installed. If you still have your HDMI monitor attached you will see the extended desktop. Use the arandr utility to view the extended desktop and the location of the LCD display with respect to the HDMI display. The mouse pointer defaults to the LCD display area. Move your mouse to the right and down to bring it into view on the HDMI monitor.
 
 Once you are happy everything is working as expected you can begin to assemble your QBox.  
 
