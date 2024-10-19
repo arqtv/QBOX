@@ -8,8 +8,7 @@ TIP: Assemble and test your electronic parts on the bench BEFORE installing them
 
     https://raspberrytips.com/boot-from-ssd-on-raspberry-pi/
 
-2. Attach a keyboard, mouse and monitor to your Raspberry Pi, insert the SD Card or fit the SSD you have just installed the OS on and boot up. Complete the OS installation procedure for the OS and if all is well you should
-End up with a command line prompt or desktop on your HDMI monitor.
+2. Attach a keyboard, mouse and monitor to your Raspberry Pi, insert the SD Card or fit the SSD you have just installed the OS on and boot up. Complete the OS installation procedure for the OS and if all is well you should end up with a command line prompt or desktop on your HDMI monitor.
 
 3. Connect your Pi to the Internet and test the connection is working.
 
