@@ -4,18 +4,18 @@ These are the steps to follow to build your QBox.
 
 TIP: Assemble and test your electronic parts on the bench BEFORE installing these into your QBox.
 
-1. Burn the OS Image of your choice to an SD Card and/or load it onto an NVMe SSD if you are installing one. 
+1. Burn the OS Image of your choice to an SD Card and/or load it onto an NVMe SSD if you are installing one (QBOX4/5 only) 
 
 2. Attach a keyboard, mouse and monitor to your Raspberry Pi, insert the SD Card or fit the SSD you have just installed the OS on and boot up. Complete the OS installation procedure for the OS and if all is well you should
 End up with a command line prompt or desktop on your HDMI monitor.
 
 3. Connect your Pi to the Internet and test the connection is working.
 
-3. Open a terminal from your desktop if necessary and then move to your root directory and download the "QBox_Startup" zip file with wget https://gitTBA and unzip it.
+3. Open a terminal from your desktop if necessary and then move to your root directory and download the "QBox_Start" zip file with wget https://gitTBA. Once downloaded, unzip it.
 
 4. Copy the firmware file for your particular LCD from the unzipped firmware folder to /lib/firmware if running a Raspberry Pi OS or to whatever directory is relevant for your particular OS.
 
-4. Open your boot/config.txt or if Pi 5 open boot/firmware/config.txt file with nano or the editor of your choice and copy the config lines for your LCD from the LCDConfig file to the end of your config file - typically under [all], then save the edited file and close nano.   
+4. Open your boot/config.txt or if Pi 5 open boot/firmware/config.txt file with nano or the editor of your choice and copy the config lines for your LCD from the LCDConfig file to the end of your config.tx file - typically under [all], then save the edited file and close nano.   
 
 5. Reboot your Pi and check your LCD is displaying cli text or the Desktop you installed.
 
