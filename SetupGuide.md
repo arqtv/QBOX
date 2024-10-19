@@ -11,7 +11,7 @@ End up with a command line prompt or desktop on your HDMI monitor.
 
 3. Connect your Pi to the Internet and test the connection is working.
 
-3. Open a terminal from your desktop if necessary and then move to your root directory and download the "QBox_Start" zip file with wget https://gitTBA. Once the zip file has downloaded you may unzip it.
+3. Open a terminal from your desktop if necessary and then move to your root directory and download the "QBox_Start" zip file with wget [.](https://github.com/arqtv/QBOX/blob/main/QBox_Start.zip) Once the zip file has downloaded you may unzip it.
 
 4. Copy the firmware file for your particular LCD from the unzipped firmware folder to /lib/firmware if running a Raspberry Pi OS or to whatever directory is relevant for your particular OS.
 
