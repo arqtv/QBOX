@@ -14,7 +14,7 @@ TIP: Assemble and test your electronic parts on the bench BEFORE installing them
 
     https://pimylifeup.com/raspberry-pi-swap-file/
        
-4. Connect your Pi to the Internet and test the connection is working. Quick and easy is to ping 1.1.1.1
+4. Connect your Pi to the Internet and test the connection is working. A quick and easy test is to ping 1.1.1.1
 
 5. Open a terminal from your desktop if necessary and from your home directory download the "QBox_Start" zip file with
 
