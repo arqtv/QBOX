@@ -72,9 +72,9 @@ Here is an example for LCD-3, the Waveshare 2.8inch Capacitive Touch LCD SKU con
       
  7.  If gpio 18 is needed for a HAT (EG the IQ Audio DAC+ HAT) then use backlight-gpio-23 and move the Jumper on the QBox Carrier board to the 23 position.
 
- 8. Now, after a reboot, you should see the CLI appear on the LCD. To run the desktop environment, you can run:
+ 8. Now, after a reboot, you should see the CLI appear on the LCD. If your OS is the Desktop version then to run the desktop environment, you can run:
       ```text
       wayfire
       ```
-      The desktop environment should now be up and running!
+      The desktop environment should now be up and running! You can change the boot to cli or boot to desktop in Raspberry Pi Preferences.
 
