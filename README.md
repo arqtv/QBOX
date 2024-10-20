@@ -6,7 +6,7 @@ As well as the housing hardware, two Carrier Boards are available. CB-1 is for t
  
 QBox measures 90 x 90 x 90 mm and is available in silver or black anodised finishes. Front and rear panels are gloss black acrylic and the front panels are designed to hold 2.4 inch or 2.8 inch LCD displays with full colour 320x240 or 640x480 resolution.  
 
-All hardware parts for this Project can be obtained from http://qbox.viota.io WORK IN PROGRESS 
+All hardware parts for this Project can be obtained from https://qbox.viota.io WORK IN PROGRESS 
  
 This repo contains Installation Guides, LCD Drivers and Documentation for the QBox Products.
 
