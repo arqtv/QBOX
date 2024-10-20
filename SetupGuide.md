@@ -39,7 +39,7 @@ Once you are happy everything is working as expected you can begin to assemble y
 
 EXAMPLE
 
-Here is an example for LCD-2, a 2.4inch display configured in Landscape mode. This LCD requires the st7789vl driver. If you wanted your LCD in Portrait mode you would use the st7789vp driver. 
+Here is an example for LCD-2, a 2.4inch display configured in Landscape mode. This LCD requires the st7789vl driver. If you wanted your LCD in Portrait mode you would use the st7789vp driver. We will build a QBox with a Pi3A+ mounted on a QBox1 Carrier Board using the SD Card we built using steps 1-4 above.
 
 1. From the command line in your home directory Download the QBox installation zip file from the git repo with
 
