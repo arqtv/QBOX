@@ -10,7 +10,7 @@ TIP: Assemble and test your electronic parts on the bench BEFORE installing them
 
 2. Attach a keyboard, mouse and monitor to your Raspberry Pi, insert the SD Card or fit the SSD you have just installed the OS on and boot up. Complete the OS installation procedure for the OS and if all is well you should end up with a command line prompt or desktop on your HDMI monitor.
 
-3. The Pi3A+ and Zero 2 W have only 500MB of RAM and can be somewhat sluggish particularly if using a desktop and a browser. Perfomance can be improved markedly by increasing the amount of swap file available on these platforms from the derisory fixed 200 Meg default setting to the dynamic setting. A short tutorial is here
+3. The Pi3A+ and Zero 2 W have only 500MB of RAM and can be somewhat sluggish particularly if using a desktop and a browser. Perfomance can be improved markedly by increasing the size of the swap file available on these platforms from the derisory fixed 200 Meg default setting to the dynamic setting. A short tutorial is here
 
     https://pimylifeup.com/raspberry-pi-swap-file/
        
@@ -51,14 +51,11 @@ Here is an example for LCD-3, the Waveshare 2.8inch Capacitive Touch LCD SKU con
 
 :~/panel-mipi-dbi $ sudo scp mipi-dbi-st7789vl.bin /lib/firmware/st7789vl.bin
    
-5. Open the LCDconfig.txt file and locate the lines for your LCD, in this example LCD-3 which is using st7789vl driver. Highlight and Copy the config lines to the end of your /boot/config.txt or if Pi5 /boot/firmware/config.txt file. 
+5. Open the LCDconfig.txt file and locate the lines for your LCD, in this example LCD-3, a 2.4inch display which is using st7789vl driver. Highlight and Copy the config lines to the end of your /boot/config.txt or if Pi5 /boot/firmware/config.txt file. 
 
 :~/panel-mipi-dbi $ cat LCD_config.txt
 
-
- TO BE EDITED BELOW
- ```
-   5. Once the firmware file is in the correct place, you can modify your config.txt to the following (you will need to use sudo to modify the file):
+6. Modify your config.txt to the following (you will need to use sudo to modify the file):
 
       ```text
       dtparam=i2c_arm=on
@@ -67,13 +64,17 @@ Here is an example for LCD-3, the Waveshare 2.8inch Capacitive Touch LCD SKU con
       
       [all]
       
-      dtoverlay=mipi-dbi-spi,spi0-0,speed=32000000
-      dtparam=compatible=mipi-dbi-st7789v\0panel-mipi-dbi-spi
-      dtparam=width=320,height=240
+      dtoverlay=mipi-dbi-spi,spi0-0,speed=40000000
+      dtparam=compatible=mipi-dbi-st7789vl\0panel-mipi-dbi-spi
+      dtparam=width=320,height=240,width-mm=49,height-mm=37
       dtparam=reset-gpio=27,dc-gpio=25,backlight-gpio=18
       ```
-   6. Now, after a reboot, you should see the CLI appear on the LCD. To run the desktop environment, you can run:
+      
+ 7.  If gpio 18 is needed for a HAT (EG the IQ Audio DAC+ HAT) then use backlight-gpio-23 and move the Jumper on the QBox Carrier board to the 23 position.
+
+ 8. Now, after a reboot, you should see the CLI appear on the LCD. To run the desktop environment, you can run:
       ```text
       wayfire
       ```
-      The desktop environment should be up and running!
+      The desktop environment should now be up and running!
+
