@@ -18,7 +18,7 @@ TIP: Connect your electronic parts to each other and then follow these steps on 
        
 4. Connect your Pi to the Internet and test the connection is working. A quick and easy test is to ping 1.1.1.1
 
-5. Open a terminal from your desktop if necessary and from your home directory download the "QBox_Start" zip file with
+5. Open a terminal and from your home directory download the "QBox_Start" zip file with
 
     wget https://github.com/arqtv/QBOX/blob/main/QBox_Start.zip
 
