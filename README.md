@@ -1,6 +1,6 @@
 # QBOX
 
-QBox is a high quality extruded aluminium enclosure designed to house the full range of Raspberry Pi single board computers and to provide makers with a versatile housing that offers expansion capability for one or two additional HATs.
+QBox is a high quality extruded aluminium enclosure designed to house the full range of Raspberry Pi single board computers and to provide makers with a versatile housing complete with an optional LCD display that offers expansion capability for one or two additional HATs.
 
 As well as the housing hardware, two Carrier Boards are available. QBox1 is for the Pi 3A+ and Zero 2 W. QBox2 is for the Pi4 and Pi5. Both carrier boards offer QWIIC and GROVE expansion connectors and QBox2 contains an NVMe M.2 connector for SSDs with an onboard 3v3 2 Amp power regulator for the SSD.  
  
