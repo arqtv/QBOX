@@ -1,5 +1,5 @@
 # QBOX
- Installation Guides and Documentation for QBox Products
+ Installation Guides and Documentation for QBox Products.
 
 The hardware and firmware for this Project is Open Source and free to use without restriction. 
 
