@@ -12,23 +12,25 @@ TIP: Connect your electronic parts to each other and then follow these steps on 
 
 2. Attach a keyboard, mouse and monitor to your Raspberry Pi, insert the SD Card or fit the SSD you have just installed the OS on and boot up. Complete the OS installation procedure for the OS and if all is well you should end up with a command line prompt or desktop on your HDMI monitor.
 
-3. The Pi3A+ and Zero 2 W have only 500MB of RAM and can be somewhat sluggish particularly if using a desktop and a browser. Perfomance can be improved markedly by increasing the size of the swap file available on these platforms from the derisory fixed 200 Meg default setting to the dynamic setting. A short tutorial is here
+3. The Pi3A+ and Zero 2 W have only 500MB of RAM and can be somewhat sluggish particularly if using a desktop and a browser. Performance can be improved markedly by increasing the size of the swap file available on these platforms from the derisory fixed 200 Meg default setting to the dynamic swapfile setting. A short tutorial is here
 
     https://pimylifeup.com/raspberry-pi-swap-file/
        
-4. Connect your Pi to the Internet and test the connection is working. A quick and easy test is to ping 1.1.1.1
+4. Connect your Pi to the Internet via your local WiFi or Ethernet to your Home Router and test the connection is working. A quick and easy test is to ping 1.1.1.1
 
 5. Open a terminal and from your home directory download the "QBox_Start" zip file with
 
     wget https://github.com/arqtv/QBOX/blob/main/QBox_Start.zip
 
 6. Once the zip file has downloaded you may unzip it.
-
+  
 7. Copy the firmware file for your particular LCD from the unzipped firmware folder to /lib/firmware if running a Raspberry Pi OS or to whatever directory is relevant for your particular OS.
 
-8. Open your boot/config.txt or if Pi 5 open boot/firmware/config.txt file with nano or the editor of your choice and copy the config lines for your LCD from the LCDConfig file to the end of your config.tx file - typically under [all], then save the edited file and close nano.   
+8. Open the LCDConfigs.txt file and locate the config lines for your LCD.
+  
+9. Open your boot/config.txt or if Pi 5 your boot/firmware/config.txt file with nano or the editor of your choice and copy the config lines for your LCD from the LCDConfig file to the end of your config.tx file - typically under [all], then save the edited file and close nano.   
 
-9. Reboot your Pi and check your LCD is displaying cli text or the Desktop you installed. If you still have your HDMI monitor attached you will see the extended desktop. Use the arandr utility to view the extended desktop and the location of the LCD display with respect to the HDMI display. The mouse pointer defaults to the LCD display area. Move your mouse to the right and down to bring it into view on the HDMI monitor.
+10. Reboot your Pi and check your LCD is displaying cli text or the Desktop you installed. If you still have your HDMI monitor attached you will see the extended desktop. Use the arandr utility to view the extended desktop and the location of the LCD display with respect to the HDMI display. The mouse pointer defaults to the LCD display area. Move your mouse to the right and down to bring the mouse pointer into view on the HDMI monitor.
 
 Once you are happy everything is working as expected you can begin to assemble your QBox.  
 
