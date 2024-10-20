@@ -33,7 +33,7 @@ Once you are happy everything is working as expected you can begin to assemble y
 
 EXAMPLE
 
-Here is an example for LCD-3, the Waveshare 2.8inch Capacitive Touch LCD SKU configured in Landscape mode. This LCD requires the st7789vl driver. If you wanted a Portrait LCD you would use the st7789vp driver. 
+Here is an example for LCD-2, a 2.4inch display configured in Landscape mode. This LCD requires the st7789vl driver. If you wanted your LCD in Portrait mode you would use the st7789vp driver. 
 
 1. From the command line in your home directory Download the QBox installation zip file from the git repo with
 
@@ -47,7 +47,7 @@ Here is an example for LCD-3, the Waveshare 2.8inch Capacitive Touch LCD SKU con
 
 :~ $ cd panel-mipi-dbi
 
-4. Copy the bin file for LCD-3 to the /lib/firmware directory
+4. Copy the binary file for LCD-2 to the /lib/firmware directory removing mipi-dbi- from the filename for convenience.
 
 :~/panel-mipi-dbi $ sudo scp mipi-dbi-st7789vl.bin /lib/firmware/st7789vl.bin
    
@@ -85,5 +85,5 @@ and paste the copied lines below
       ```text
       wayfire
       ```
-      The desktop environment should now be up and running! You can change the boot to cli or boot to desktop in Raspberry Pi Preferences.
+      The desktop environment should now be up and running! You can change the startup boot to cli or boot to desktop in Raspberry Pi Preferences.
 
