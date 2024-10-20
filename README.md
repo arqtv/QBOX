@@ -3,6 +3,6 @@
 
 The hardware and firmware for this Project is Open Source and free to use without restriction. 
 
-Please use entirely at your own risk as no liability is assumed.
+Please use entirely at your own risk as no liability is assumed. Please see Unlicensed for more details.
 
 See the Wiki for more info.
