@@ -51,16 +51,25 @@ Here is an example for LCD-3, the Waveshare 2.8inch Capacitive Touch LCD SKU con
 
 :~/panel-mipi-dbi $ sudo scp mipi-dbi-st7789vl.bin /lib/firmware/st7789vl.bin
    
-5. Open the LCDconfig.txt file and locate the lines for your LCD, in this example LCD-3, a 2.4inch display which is using st7789vl driver. Highlight and Copy the config lines to the end of your /boot/config.txt or if Pi5 /boot/firmware/config.txt file. 
+5. Open the LCDconfig.txt file and locate the lines for your LCD, in this example LCD-2, a 2.4inch display which is using the st7789vl driver. Copy the config lines to the end of your /boot/config.txt or if Pi5 /boot/firmware/config.txt file. 
 
 :~/panel-mipi-dbi $ cat LCD_config.txt
 
+copy the lines 
+
+      dtoverlay=mipi-dbi-spi,spi0-0,speed=40000000
+      dtparam=compatible=mipi-dbi-st7789vl\0panel-mipi-dbi-spi
+      dtparam=width=320,height=240,width-mm=49,height-mm=37
+      dtparam=reset-gpio=27,dc-gpio=25,backlight-gpio=18
+      
 6. Modify your config.txt to the following (you will need to use sudo to modify the file):
 
       ```text
       dtparam=i2c_arm=on
       #dtparam=i2s=on
       dtparam=spi=on
+
+and paste the copied lines below
       
       [all]
       
