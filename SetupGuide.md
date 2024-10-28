@@ -87,7 +87,7 @@ and paste the copied lines below
       dtparam=reset-gpio=27,dc-gpio=25,backlight-gpio=18
       ```
       
- 7.  If gpio 18 is needed for a HAT (EG the IQ Audio DAC+ HAT) then use backlight-gpio-23 and move the Jumper on the QBox Carrier board to the 23 position.
+ 7.  If gpio 18 is needed for a HAT (EG the IQ Audio DAC+ HAT) then use backlight-gpio=23 and move the Jumper on the QBox Carrier board to the 23 position.
 
  8. Now, after a reboot, you should see the CLI appear on the LCD. If your OS is the Desktop version then to run the desktop environment, you can run:
       ```text
