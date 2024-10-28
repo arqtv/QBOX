@@ -2,11 +2,13 @@
 
 Follow these steps to build your QBox.
 
-TIP: Connect your electronic parts to each other and then follow these steps on the bench BEFORE installing them into your QBox. Assembly Guides are here.
+TIP: Connect your electronic parts to each other on the bench first and then follow these steps BEFORE installing them into your QBox. 
+
+Assembly Guides are here.
 
     https://TBA
 
-TIP: Read the whole of this Setup Guide including the Example at least once before starting.
+TIP: Read the whole of this Setup Guide including the Example at least once before starting to build your QBox.
 
 1. Burn the OS Image of your choice to an SD Card (For all Pi's) and/or load the image onto an NVMe SSD if you are installing one (For Pi4 or Pi5 only). If you are unfamiliar with this process a useful Guide is here.
 
