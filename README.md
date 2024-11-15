@@ -12,6 +12,8 @@ This repo contains Installation Guides, LCD Drivers and Documentation for the QB
 
 The hardware and firmware for this Project is Open Source and free to use without restriction. 
 
+Credit and much thanks to Kieran and Isaac at Ideasonboard for the LCD overlays
+
 Please use at your own risk as no liability is assumed. See [Unlicensed](https://choosealicense.com/licenses/unlicense/) for more details.
 
 The Wiki contains more info.
