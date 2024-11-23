@@ -7,12 +7,12 @@ QBox measures 90 x 90 x 90 mm and is available in silver or black anodised finis
 
 All hardware parts for this Project can be obtained from https://qbox.viota.io WORK IN PROGRESS 
  
-This repo contains Installation Guides, LCD Drivers and Documentation for the QBox Products. 
+This repo contains Installation Guides, LCD binaries and Documentation for the QBox Products. 
 
 The hardware and firmware for this Project is Open Source and free to use without restriction. 
 
-Credit and much thanks to Kieran and Isaac at Ideasonboard for their excellent work on the LCD overlays.
+Credit and much thanks to Kieran and Isaac at Ideasonboard for their excellent work on the LCD binaries.
 
 Please use at your own risk as no liability is assumed. See [Unlicensed](https://choosealicense.com/licenses/unlicense/) for more details.
 
-The Wiki contains the guides, drivers and more info.
+The Wiki contains the guides, binaries and more info.
